@@ -14,18 +14,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="navbar" class="flex justify-end">
-        <nav>
-           <a href="index.html">About me</a>
-           <a href="cv.html">CV</a>
-           <a href="projects.html">Projects</a>
-        </nav>
-     </div>
+<body class="mt-8">
      <div id="content">
-        <header>
-            <h2>Projects</h2>
+        <header class="smaller">
+            <div class="text-content">
+               <h2>
+                  <span class="slidingText left">Projects</span>
+               </h2>
+            
+            <div class="tooltip-container">
+                    <div id="fancyButton" class="fancy-btn" ></div>
+                    <span class="custom-tooltip">Menu</span>
+                </div>
+                <div id="navbar" class=" navbar">
+                    <nav>
+                        <a href="index.html">About me</a>
+                        <a href="cv.html" id="cvNav">CV</a>
+                        <a href="projects.html">Projects</a>
+                    </nav>
+                </div>
+                </div>
         </header>
+        <main></main>
+
+        <footer class="flex justify-center gap-5 items-center p-4 text-xs">
+            <p>&copy; 2025 Nicoleta Gheorghe | Software Developer</p>
+            <div>
+               <ul class="flex space-x-4">
+                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=g.nicole261193@gmail.com" target="_blank"><span class="envelope">&#128386;</span></a></li>
+                    <li><a href="https://github.com/NicoletaGheorghe" target="_blank"><i class="devicon-github-original" ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nicoleta-gheorghe-6323b0166/" target="_blank"><i class="devicon-linkedin-plain"></i></a></li>
+                </ul> 
+            </div>
+        </footer>
      </div>
+     <script src="index.js"></script>
 </body>
 </html>

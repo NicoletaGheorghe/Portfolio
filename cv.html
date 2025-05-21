@@ -15,22 +15,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="navbar" class="flex justify-end">
-        
-       <nav>
-           <a href="index.html">About Me</a>
-           <a href="cv.html">CV</a>
-           <a href="projects.html">Projects</a>
-       </nav>
-    </div>
+<body class="mt-8">
     <div id="content">
-        <header>
-            <h2>Curriculum Vitae</h2>
+        <header class="smaller">
+            <div class="text-content">
+                <h2>
+                    <span class="slidingText left">Curriculum&nbsp;</span>
+                    <span class="slidingText right">Vitae</span>
+                </h2>
+                <div class="tooltip-container">
+                    <div id="fancyButton" class="fancy-btn" ></div>
+                    <span class="custom-tooltip">Menu</span>
+                </div>
+                <div id="navbar" class=" navbar">
+                    <nav>
+                        <a href="index.html">About me</a>
+                        <a href="cv.html" id="cvNav">CV</a>
+                        <a href="projects.html">Projects</a>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <main>
-           
+        <main class="grid-cols-1 w-4/8 mx-auto my-10">
+           <h3>Personal Statement</h3>
+           <p class="indent-10">Motivated and adaptable graduate with a Level 6 qualification in Business Management (Finance) and a strong passion for software development. I am currently enrolled in a software development bootcamp, learning full-stack technologies including JavaScript, Next.js, React and Express, with hands-on experience using Postman and Insomnia for API testing. Recently, I've also been working with MongoDB to expand my database skills.</p>
+           <p class="indent-10">I focus on developing practical skills through hands-on projects. I enjoy creating things that are not only technically solid but also intuitive and useful for users. I'm looking for a chance to be part of a team where I can keep learning, get experience on real projects, and become a well-rounded software developer.</p>
+            <hr/>
+            <h3>Skills</h3>
+            <ul class="list-disc marker:text-yellow-600 ">
+                <li><span class="font-bold">Languages & Frameworks:</span> HTML, CSS, JavaScript, Python, Next.js, React, Express.js</li>
+                <li><span class="font-bold">Databases:</span> MongoDB, Mongoose</li>
+                <li><span class="font-bold">Tools & Platforms:</span> Postman, Insomnia, Git & GitHub, Visual Studio Code</li>
+                <li><span class="font-bold">Concepts:</span> RESTful APIs, DOM Manipulation, Responsive Design, CRUD Operations</li>
+                <li><span class="font-bold">Productivity Tools:</span> Microsoft Office (Word, Excel, PowerPoint), Google Suite</li>
+                <li><span class="font-bold">Soft Skills:</span> Effective communicator, team player, organized, self-motivated, problem-solver</li>
+            </ul>
+            <hr/>
+            <h3>Education</h3>
+            <p class="font-bold">Software Development Skills Bootcamp (Full-Stack Web Development)</p>
+            <p class="font-bold">The Developer Academy | April 2025 - June 2025</p>
+            <p>An intensive, full-time 12-week program focused on modern web development.</p>
+            <ul class="list-disc marker:text-yellow-600 ">
+                <li>Learned front-end development using HTML, CSS, and JavaScript, with a strong emphasis on DOM manipulation, UX, and accessibility.</li>
+                <li>Practiced Object-Oriented Programming (OOP), Test-Driven Development (TDD), and Agile methodologies.</li>
+                <li>Built and tested RESTful APIs using Node.js, Express, and MongoDB (Mongoose).</li>
+                <li>Worked on collaborative group projects, applying version control with Git and using Agile methodologies.</li>
+            </ul>
+            <p class="font-bold mt-5">Bachelor's degree in business management (Finance)</p>
+            <p class="font-bold">Regent College in partnership with University of Bolton | 2022</p>
+            <ul class="list-disc marker:text-yellow-600 ">
+                <li>Gained foundational knowledge in business processes, financial management, and organizational skills.</li>
+                <li>Developed analytical thinking through coursework, with a focus on budgeting, financial statements, and business strategy.</li>
+            </ul>
+           <a href="/files/CV-Nicoleta-Gheorghe.pdf" download class="btn download-btn">Download CV</a>
         </main>
+        <footer class="flex justify-center gap-5 items-center p-4 text-xs">
+            <p>&copy; 2025 Nicoleta Gheorghe | Software Developer</p>
+            <div>
+               <ul class="flex space-x-4">
+                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=g.nicole261193@gmail.com" target="_blank"><span class="envelope">&#128386;</span></a></li>
+                    <li><a href="https://github.com/NicoletaGheorghe" target="_blank"><i class="devicon-github-original" ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nicoleta-gheorghe-6323b0166/" target="_blank"><i class="devicon-linkedin-plain"></i></a></li>
+                </ul> 
+            </div>
+        </footer>
     </div>
     <script src="index.js"></script>
 </body>
