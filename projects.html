@@ -35,7 +35,96 @@
                 </div>
                 </div>
         </header>
-        <main></main>
+        <main class=" w-7/8 md:w-5/8 mx-auto my-10 ">
+            <div class="grid grid-cols-1 md:grid-cols-5  gap-7 items-start" >
+                <div id="slide1" class="slideshow-cont grid col-span-2 mx-auto justify-center" >
+                    <div class="mySlides fade" onclick="startSlideshow()">
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/thunderstorm.png" alt="Thunderstorm Background" />
+                        <div class="text">Thunderstorm background</div>
+                    </div>
+                    <div class="mySlides fade" onclick="startSlideshow()">
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/partlycloudy.png" alt="Partly Cloudy Background" />
+                        <div class="text">Partly cloudy background</div>
+                    </div>
+                    <div class="mySlides fade" onclick="startSlideshow()" >
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/sunny.png" alt="Sunny Background" />
+                        <div class="text">Sunny background</div>
+                    </div>
+                     <a class="prev" onclick="plusSlides('slide1', -1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides('slide1', 1)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide('slide1', 1)"></span> 
+                        <span class="dot" onclick="currentSlide('slide1', 2)"></span> 
+                        <span class="dot" onclick="currentSlide('slide1', 3)"></span> 
+                    </div>
+                </div>
+                 
+                <div class="grid col-span-3 mt-8">
+                    <p class="indent-6">A weather app built with Next.js and TailwindCSS. Users can search any city to view a 7-day forecast, including hourly temperatures for the current day. The app's background color changes dynamically based on weather conditions using weather codes. Powered by Open-Meteo API. Deployed don Vercel.</p>
+                    <p><span class="font-bold">Live Demo: </span> <a href="https://my-weather-forecast-zeta.vercel.app/" target="_blank">Here</a></p>
+                    <p><span class="font-bold">GitHub Repo: </span> <a href="https://github.com/NicoletaGheorghe/my-weather-forecast" target="_blank">Here</a></p>
+                </div> 
+                </div>
+                <hr/>
+              <div class="grid grid-cols-1 md:grid-cols-5  gap-7 items-start " > 
+                 <div class="grid col-span-3 mt-8">
+                    <p class="indent-6">A real-time Caesar Cipher encryption and decryption tool built with JavaScript. Users can enter text and instantly see the encoded or decoded result by adjusting the shift value (positive or negative). Developed using Test-Driven Development (TDD) to ensure reliable and accurate functionality. Deployed on GitHub Pages.</p>
+                    <p><span class="font-bold">Live Demo: </span> <a href="https://nicoletagheorghe.github.io/Caesar-Cipher/" target="_blank">Here</a></p>
+                    <p><span class="font-bold">GitHub Repo: </span> <a href="https://github.com/NicoletaGheorghe/Caesar-Cipher" target="_blank">Here</a></p>
+
+                </div> 
+                <div id="slide2" class="slideshow-cont grid col-span-2 mx-auto justify-center" >
+                    <div class="mySlides fade" onclick="startSlideshow()">
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/cipherfullscreen.png" alt="Calculator" />
+                        <div class="text">Encoding example</div>
+                    </div>
+                    <div class="mySlides fade" onclick="startSlideshow()">
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/decript1.png" alt="3 calculator images showing calculation of 45 X 3 = 135" />
+                        <div class="text">Decoding example</div>
+                    </div>
+                    <div class="mySlides fade" onclick="startSlideshow()" >
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/ciphermobile.png" alt="mobile version of the calculator" />
+                        <div class="text">Mobile version</div>
+                    </div>
+                     <a class="prev" onclick="plusSlides('slide2', -1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides('slide2', 1)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide('slide2', 1)"></span> 
+                        <span class="dot" onclick="currentSlide('slide2', 2)"></span> 
+                        <span class="dot" onclick="currentSlide('slide2', 3)"></span> 
+                    </div>
+                </div>
+            </div>
+               <hr/>
+               <div class="grid grid-cols-1 md:grid-cols-5  gap-7 items-start" >
+                <div id="slide3" class="slideshow-cont grid col-span-2 mx-auto justify-center" >
+                    <div class="mySlides fade" onclick="startSlideshow()">
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/calculator.png" alt="Calculator" />
+                        <div class="text">Calculator</div>
+                    </div>
+                    <div class="mySlides fade" onclick="startSlideshow()">
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/45x3=135.png" alt="3 calculator images showing calculation of 45 X 3 = 135" />
+                        <div class="text">Calculation example</div>
+                    </div>
+                    <div class="mySlides fade" onclick="startSlideshow()" >
+                        <img class="md:transition-transform md:duration-500 md:ease-in-out md:hover:scale-[1.15]" src="images/mobileVersion.png" alt="mobile version of the calculator" />
+                        <div class="text">Mobile version</div>
+                    </div>
+                     <a class="prev" onclick="plusSlides('slide3', -1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides('slide3', 1)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide('slide3', 1)"></span> 
+                        <span class="dot" onclick="currentSlide('slide3', 2)"></span> 
+                        <span class="dot" onclick="currentSlide('slide3', 3)"></span> 
+                    </div>
+                </div>
+                <div class="grid col-span-3 mt-8">
+                    <p class="indent-6">A responsive calculator built with HTML, CSS, and JavaScript. It performs basic arithmetic operations such as: addition, subtraction, multiplication, and division. With a clean UI and smooth button interactions. Deployed on GitHub Pages.</p>
+                    <p><span class="font-bold">Live Demo: </span> <a href="https://nicoletagheorghe.github.io/Calculator/" target="_blank">Here</a></p>
+                    <p><span class="font-bold">GitHub Repo: </span> <a href="https://github.com/NicoletaGheorghe/Calculator" target="_blank">Here</a></p>
+                </div> 
+            </div>
+        </main>
 
         <footer class="flex justify-center gap-5 items-center p-4 text-xs">
             <p>&copy; 2025 Nicoleta Gheorghe | Software Developer</p>

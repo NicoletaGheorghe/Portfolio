@@ -37,4 +37,47 @@ function toggleNavbar() {
 fancyButton.addEventListener('click', toggleNavbar);
 
 
-window.onload= slideIn;
+const slideIndices = {};
+
+// Initialize all slideshows
+function initSlideshows() {
+  const slideshows = document.querySelectorAll(".slideshow-cont");
+  slideshows.forEach((slideshow) => {
+    const id = slideshow.id;
+    slideIndices[id] = 1;
+    showSlides(id, 1);
+  });
+}
+
+function plusSlides(id, n) {
+  showSlides(id, slideIndices[id] += n);
+}
+
+function currentSlide(id, n) {
+  showSlides(id, slideIndices[id] = n);
+}
+
+function showSlides(id, n) {
+  const container = document.getElementById(id);
+  const slides = container.getElementsByClassName("mySlides");
+  const dots = container.getElementsByClassName("dot");
+
+  if (n > slides.length) slideIndices[id] = 1;
+  if (n < 1) slideIndices[id] = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndices[id] - 1].style.display = "block";
+  dots[slideIndices[id] - 1].classList.add("active");
+}
+
+// Start when the page loads
+window.onload = function(){
+   initSlideshows();
+    slideIn();}
+  
