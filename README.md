@@ -1,8 +1,12 @@
 # Personal Portfolio
 A responsive and interactive personal portfolio website built with HTML, CSS, and JavaScript. It showcases my projects, skills, and contact information in a clean, modern layout.
 
+-----
+
  Live Demo
 View it here: https://nicoletagheorghe.github.io/Portfolio/
+
+-----
 
  Features:
  
@@ -16,15 +20,20 @@ Links to live demos and GitHub repositories
 
 Contact section with social media links
 
+-----
+
  Technologies Used:
  
-HTML5
+- HTML5
 
-CSS3 (including Flexbox and Grid)
+- CSS3 (including Flexbox and Grid)
 
-Vanilla JavaScript
+- JavaScript
+
+-----
 
  How to Use
+ 
 To view locally:
 
 git clone https://github.com/NicoletaGheorghe/Portfolio.git
@@ -32,6 +41,8 @@ git clone https://github.com/NicoletaGheorghe/Portfolio.git
 cd your-portfolio
 
 Then open index.html in your browser.
+
+-----
 
  Acknowledgements:
 
