@@ -79,5 +79,14 @@ function showSlides(id, n) {
 // Start when the page loads
 window.onload = function(){
    initSlideshows();
-    slideIn();}
+    slideIn();
+    const fancyButton = document.getElementById('fancyButton');
+    setTimeout(() => {
+        fancyButton.classList.add('rotate-once');
+    }, 100);
+
+    setTimeout(() => {
+        fancyButton.classList.remove('rotate-once');
+    }, 2100);
+  }
   
