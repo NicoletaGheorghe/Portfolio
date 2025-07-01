@@ -55,7 +55,7 @@ h3{
     
 }
 header img{
-    padding: 8px;
+    padding: 7px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -118,8 +118,8 @@ i {
 
 .fancy-btn {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     border: 2px solid transparent;
     background: linear-gradient(145deg, #d4af37, #c49e28);
@@ -131,9 +131,10 @@ i {
     transform-style: preserve-3d;
     transform-origin: center;
     z-index: 1;
-    animation: rotateYAnimation 3s linear infinite;
 }
-
+.fancy-btn.rotate-once {
+    animation: rotateYAnimation 1s ease-in-out;
+}
 
 @keyframes rotateYAnimation {
     0% { transform: rotateY(0deg); }
@@ -146,7 +147,7 @@ i {
 
 .navbar {
     display: none;
-    margin-top: 15px;
+    margin-top: 14px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
     transform: translateY(-20px);
